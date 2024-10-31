@@ -1,0 +1,94 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: white; /* Set the background to white */
+    color: black; /* Default text color to black */
+}
+
+/* Container settings */
+.container {
+    background-color: #f9f9f9; /* Light grey background for the container */
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft black shadow */
+    text-align: center; /* Center the content */
+}
+
+/* Logo settings */
+.logo {
+    margin-bottom: 20px; /* Space below the logo */
+    height: 50px; /* Set the logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Timer display settings */
+.timerDisplay {
+    width: 92%;
+    background: white; /* White background for the timer display */
+    padding: 40px 0;
+    font-family: 'Roboto mono', monospace;
+    color: orange; /* Timer text color set to orange */
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the timer text */
+    border-radius: 5px;
+    border: 2px solid orange; /* Orange border */
+}
+
+/* Button styles */
+.buttons {
+    width: 90%;
+    margin: 20px auto 0 auto; /* Adjusted margin for spacing */
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: orange; /* Orange background for buttons */
+    color: white; /* Button text color set to white */
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.buttons button:hover {
+    background-color: #d27d00; /* Darker orange on hover */
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #d23332; /* Red for pause button */
+}
+
+.buttons button:nth-last-child(2):hover {
+    background-color: #a62323; /* Darker red on hover */
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #20b380; /* Green for reset button */
+}
+
+.buttons button:nth-last-child(1):hover {
+    background-color: #168a5b; /* Darker green on hover */
+}
